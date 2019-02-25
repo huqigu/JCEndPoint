@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'JCEndPoint_Example' do
+  pod 'JCEndPoint', :path => '../'
+
+  target 'JCEndPoint_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
