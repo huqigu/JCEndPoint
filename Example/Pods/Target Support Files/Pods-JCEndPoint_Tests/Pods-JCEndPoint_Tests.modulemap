@@ -1,0 +1,6 @@
+framework module Pods_JCEndPoint_Tests {
+  umbrella header "Pods-JCEndPoint_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

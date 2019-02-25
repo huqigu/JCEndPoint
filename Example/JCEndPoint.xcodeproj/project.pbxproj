@@ -15,6 +15,7 @@
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		6F7A51132BB986D60A51C33E /* Pods_JCEndPoint_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FDF3765960E9F92B14B1B70 /* Pods_JCEndPoint_Tests.framework */; };
 		A24628B67A5A237AB4EA3464 /* Pods_JCEndPoint_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 943CA8DB2B4ECBA6705B16E5 /* Pods_JCEndPoint_Example.framework */; };
+		FD8598ED22242E7E0028DA46 /* HomeNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8598EC22242E7E0028DA46 /* HomeNetworking.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,9 +30,9 @@
 
 /* Begin PBXFileReference section */
 		0FDF3765960E9F92B14B1B70 /* Pods_JCEndPoint_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JCEndPoint_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2DBA4F89AF5164B52C41BBA0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		2DBA4F89AF5164B52C41BBA0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		4A9D109DEAC3298DF0DB6E8B /* Pods-JCEndPoint_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCEndPoint_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JCEndPoint_Tests/Pods-JCEndPoint_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		53D69863475197F8A5D901F8 /* JCEndPoint.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = JCEndPoint.podspec; path = ../JCEndPoint.podspec; sourceTree = "<group>"; };
+		53D69863475197F8A5D901F8 /* JCEndPoint.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = JCEndPoint.podspec; path = ../JCEndPoint.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		607FACD01AFB9204008FA782 /* JCEndPoint_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JCEndPoint_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -45,8 +46,9 @@
 		80C5918606CC38EF58FC4C2C /* Pods-JCEndPoint_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCEndPoint_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JCEndPoint_Example/Pods-JCEndPoint_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		943CA8DB2B4ECBA6705B16E5 /* Pods_JCEndPoint_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JCEndPoint_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D375BB1976370D4551E6EB47 /* Pods-JCEndPoint_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCEndPoint_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JCEndPoint_Tests/Pods-JCEndPoint_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		D4F63B669F7A85587097E567 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		D4F63B669F7A85587097E567 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		DDBA4D325247B1A5309B9DA0 /* Pods-JCEndPoint_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCEndPoint_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-JCEndPoint_Example/Pods-JCEndPoint_Example.release.xcconfig"; sourceTree = "<group>"; };
+		FD8598EC22242E7E0028DA46 /* HomeNetworking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeNetworking.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				FD8598EC22242E7E0028DA46 /* HomeNetworking.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -292,13 +295,19 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-JCEndPoint_Example/Pods-JCEndPoint_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/JCEndPoint/JCEndPoint.framework",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JCEndPoint.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -334,6 +343,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD8598ED22242E7E0028DA46 /* HomeNetworking.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);

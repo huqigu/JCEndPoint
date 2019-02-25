@@ -1,0 +1,33 @@
+PODS:
+  - Alamofire (4.8.1)
+  - JCEndPoint (0.1.0):
+    - Alamofire
+    - NVActivityIndicatorView
+    - SwiftyJSON (~> 4.0)
+  - NVActivityIndicatorView (4.6.1):
+    - NVActivityIndicatorView/Presenter (= 4.6.1)
+  - NVActivityIndicatorView/Presenter (4.6.1)
+  - SwiftyJSON (4.2.0)
+
+DEPENDENCIES:
+  - JCEndPoint (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - NVActivityIndicatorView
+    - SwiftyJSON
+
+EXTERNAL SOURCES:
+  JCEndPoint:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
+  JCEndPoint: c4e93d814774b1ce3dda186ec282e77aebd05017
+  NVActivityIndicatorView: 4ca19fccc84595a78957336a086d00a49be6ce61
+  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
+
+PODFILE CHECKSUM: 1c530571b3aea8a23c80bcf27a7ba4cba9c269aa
+
+COCOAPODS: 1.5.3
